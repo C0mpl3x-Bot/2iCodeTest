@@ -6,6 +6,10 @@ public class Main {
     //Assuming there are 4 duplicates in the list of numbers, the output should remove the duplicates and sort the remaining numbers in descending order. Please state any assumptions you’ve made.
 
     public static void main(String[] args) {
+        System.out.println(Answer());
+    }
+
+    public static List<Integer> Answer(){
         //initialise arraylist called nums
         List<Integer> num = new ArrayList<>();
         //initialise scanner class with name scanner
@@ -49,12 +53,8 @@ public class Main {
         //finally using collections.sort reverse the order of the arraylist which is the gives us the reuslt we wanted.
         Collections.sort(arrListWithNoDups, Collections.reverseOrder());
 
-        //print out the final result to the console
-        System.out.println(arrListWithNoDups);
-
-        //Final Message
-        //This could be put into a function and then where it returns an arraylist which contains the results we wanted instead of doing it in public static void main(String[] args)
-
-
+        //return the final result to the console
+        return arrListWithNoDups;
+        
     }
 }
